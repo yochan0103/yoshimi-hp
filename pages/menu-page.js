@@ -75,7 +75,7 @@ const Menu = ({ menu }) => {
                 <img src="/IMG_10.jpg" alt='' className={styles.YogaHeroImage} />
                 <div className={styles.YogaTextWrapper}>
                     <h1 className={styles.YogaText}>ヨガメニュー</h1>
-                    <p className={styles.YogaSubText}>Let's Yoga ♪</p>
+                    <p className={styles.YogaSubText}>体を動かしてリフレッシュ！！</p>
                 </div>
             </div>
             <div className={styles.YogaMenuWrapper}>

@@ -26,7 +26,11 @@ const HamburgerNewsMenu = () => {
                         onClick={() => OpenFunction()}
                         />
             }
-            <div className={styles.title}>yuj</div>
+            <div className={styles.title}>
+                <Link href='/'>
+                    yuj
+                </Link>
+            </div>
         </div>
         <nav className={styles.HamburgerNav}>
             {openMenu && <ul className={styles.MenuWrapper}>

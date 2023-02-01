@@ -17,11 +17,15 @@ const NewsId = ({ news }) => {
     <>
       <HamburgerNewsMenu />
       <div className={styles.PrevWrapper}>
-        <a href='/' className={styles.PrevHome}>Home</a>
-        <a className={styles.MiddleIcon}>&gt;</a>
-        <a href='/News-page' className={styles.PrevNews}>News</a>
-        <a className={styles.MiddleIcon}>&gt;</a>
-        <a className={styles.RecentNews}>{news.title}</a>
+        <Link href='/'>
+          <p href='/' className={styles.PrevHome}>Home</p>
+        </Link>
+        <p className={styles.MiddleIcon}>&gt;</p>
+        <Link href='/News-page'>
+          <p href='/News-page' className={styles.PrevNews}>News</p>
+        </Link>
+        <p className={styles.MiddleIcon}>&gt;</p>
+        <p className={styles.RecentNews}>{news.title}</p>
       </div>
       <div className={styles.ResponsePrevWrapper}>
         <Link href='/News-page'>

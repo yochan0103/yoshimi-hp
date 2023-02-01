@@ -28,9 +28,11 @@ const NewsPage = ({newses}) => {
       <Header />
       <HamburgerMenu />
       <div className={styles.PrevWrapper}>
-        <a href='/' className={styles.PrevHome}>Home</a>
-        <a className={styles.MiddleIcon}>&gt;</a>
-        <a className={styles.PrevNews}>News</a>
+        <Link href='/'>
+          <p className={styles.PrevHome}>Home</p>
+        </Link>
+        <p className={styles.MiddleIcon}>&gt;</p>
+        <p className={styles.PrevNews}>News</p>
       </div>
       <div className={styles.ContentsWrapper}>
         <div className={styles.NewsContentsTitle}>
@@ -39,7 +41,7 @@ const NewsPage = ({newses}) => {
         </div>
         <ul className={styles.NewsElementWrapper}>
           {newses.map((news) => (
-            <Link href={`/news/${news.id}`}>
+            <Link href={`/news/${news.id}`} key={news.id}>
               <div className={styles.NewsDate}>
                 <ConvertTime convertDate={news.publishedAt} />
               </div>

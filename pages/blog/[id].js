@@ -17,11 +17,15 @@ const BlogId = ({ blogs }) => {
     <>
       <HamburgerNewsMenu />
       <div className={styles.PrevWrapper}>
-        <a href='/' className={styles.PrevHome}>Home</a>
-        <a className={styles.MiddleIcon}>&gt;</a>
-        <a href='/blog-page' className={styles.PrevBlog}>Blog</a>
-        <a className={styles.MiddleIcon}>&gt;</a>
-        <a className={styles.RecentBlog}>{blogs.title}</a>
+        <Link href='/'>
+          <p className={styles.PrevHome}>Home</p>
+        </Link>
+        <p className={styles.MiddleIcon}>&gt;</p>
+        <Link href='/blog-page'>
+          <p href='/blog-page' className={styles.PrevBlog}>Blog</p>
+        </Link>
+        <p className={styles.MiddleIcon}>&gt;</p>
+        <p className={styles.RecentBlog}>{blogs.title}</p>
       </div>
       <div className={styles.ResponsePrevWrapper}>
         <Link href='/BlogList'>

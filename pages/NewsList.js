@@ -31,7 +31,7 @@ const NewsList = () => {
             </div>
             <ul className={styles.ListWrapper}>
               {data.slice(0,3).map((news) => (
-                <Link href={`/news/${news.id}`}>
+                <Link href={`/news/${news.id}`} key={news.id}>
                   <div className={styles.NewsDate}>
                    <ConvertTime convertDate={news.publishedAt} />
                   </div>

@@ -98,7 +98,7 @@
     position:relative;
     top:-15rem;
     left: 10rem;
-    width: 40vw;
+    width: 60vw;
     height: auto;
 }
 
@@ -108,7 +108,7 @@
     text-shadow: brown 3px 0 20px;
     font-family: 'Roboto Slab', serif;
     letter-spacing: 0.2rem;
-    width: 40vw;
+    width: 60vw;
     height: auto;
 }
 
@@ -117,8 +117,7 @@
     color:white;
     text-shadow: brown 2px 0 20px;
     letter-spacing: 0.2rem;
-    font-family: 'Caveat', cursive;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'IBM Plex Sans JP', sans-serif;
     width: 40vw;
     height: auto;
 }
@@ -164,7 +163,7 @@
     }
 
     .HeroTextWrapper{
-        width: 60vw;
+        width: 80vw;
         height: auto;
         position: relative;
         top:-10rem;

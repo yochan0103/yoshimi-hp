@@ -26,9 +26,13 @@ const BlogList = ({blogs}) => {
         <Header />
         <HamburgerMenu />
         <div className={styles.PrevWrapper}>
-            <a href='/' className={styles.PrevHome}>Home</a>
-            <a className={styles.MiddleIcon}>&gt;</a>
-            <a href='/blog-page' className={styles.PrevBlog}>Blog</a>
+            <Link href='/'>
+                <p className={styles.PrevHome}>Home</p>
+            </Link>
+            <p className={styles.MiddleIcon}>&gt;</p>
+            <Link href='/blog-page'>
+                <p className={styles.PrevBlog}>Blog</p>
+            </Link>
         </div>
         <div className={styles.ContentsWrapper}>
             <div className={styles.BlogContentsTitle}>
@@ -37,7 +41,7 @@ const BlogList = ({blogs}) => {
             </div>
             <ul className={styles.BlogElementWrapper}>
                 {blogs.map((blog) => (
-                    <Link href={`/blog/${blog.id}`}>
+                    <Link href={`/blog/${blog.id}`} key={blog.id}>
                         <li key={blog.id} className={styles.BlogContentsWrapper}>
                             <div className={styles.BlogListWrapper}>
                                 <img src={blog.eyecatch.url} alt="" className={styles.ImageWrapper} />
