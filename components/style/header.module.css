@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto+Slab&display=swap');
+
+.HeaderWrapper {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 1;
+    font-family: 'Roboto Slab', serif;
+}
+
+.Nav {
+    width: 100vw;
+    display:flex;
+    justify-content: space-between;
+}
+
+.MenuWrapper {
+    padding: 0;
+    margin-top: 1rem;
+    margin-right:3rem;
+    list-style-type: none;
+}
+
+.ListItem {
+    display: inline;
+    margin: 2rem;
+    cursor: pointer;
+    right: 5%;
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 0 snow;
+}
+
+.ListItem:hover {
+    border-bottom: solid 2px orange;
+    padding-bottom:10px;
+}
+
+@media screen and (max-width:900px) {
+    .HeaderWrapper{
+        display: none;
+    }
+}

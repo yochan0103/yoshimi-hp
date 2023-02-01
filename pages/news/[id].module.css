@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300&family=Passions+Conflict&display=swap');
+
+.PrevWrapper{
+    position: relative;
+    width: 90vw;
+    height: auto;
+    top:5vh;
+    left:5vw;
+}
+
+.PrevHome{
+    font-size:1rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto Slab', serif;
+    margin:2rem;
+}
+
+.PrevHome::after{
+    position: absolute;
+    bottom: -4px;
+    left: 2rem;
+    content: '';
+    width: 3.5rem;
+    height: 1px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+
+.PrevHome:hover::after {
+    transform: scale(1, 1);
+}
+
+.MiddleIcon{
+    font-size:1rem;
+}
+
+.PrevNews{
+    font-size:1rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto Slab', serif;
+    margin:2rem;
+}
+
+.PrevNews::after{
+    position: absolute;
+    bottom: -4px;
+    left: 10rem;
+    content: '';
+    width: 3.5rem;
+    height: 1px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+
+.PrevNews:hover::after {
+    transform: scale(1, 1);
+}
+
+.RecentNews{
+    font-size:1rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto Slab', serif;
+    margin:2rem;
+}
+
+.ContentsWrapper{
+    width:60vw;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:5rem;
+}
+
+.Title {
+    font-size: 2rem;
+    color:black;
+}
+
+.PublishedTime {
+    color: black;
+}
+
+.Contents {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    /* margin:2rem; */
+    color:black;
+    font-family: 'IBM Plex Sans JP', sans-serif;
+}
+
+.ResponsePrevWrapper{
+    display:none;
+}
+
+@media screen and (max-width:900px) {
+    .PrevWrapper{
+        display: none;
+    }
+
+    .ResponsePrevWrapper{
+        display: initial;
+        height: auto;
+        width:50vw;
+        position: relative;
+        top:7vh;
+        left: 20px;
+    }
+
+    .ResponsePrevText{
+        position: relative;
+        bottom:8px;
+        left:10px;
+    }
+    .ContentsWrapper{
+        width:80vw;
+    }
+    .PublishedTime{
+        font-size: 0.8rem;
+    }
+    .Title{
+        font-size: 1.5rem;
+    }
+    .Contents{
+        font-size: 1rem;
+    }
+}

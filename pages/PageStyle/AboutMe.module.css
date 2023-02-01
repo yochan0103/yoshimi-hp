@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300&family=Passions+Conflict&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto+Slab&display=swap');
+
+.ContentsTitleWrapper{
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.ContentsTitle{
+    border-bottom: 3px solid #D3E173;
+    padding-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+}
+
+.ContensWrapper{
+    width:100vw;
+    height:auto;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.ImgWrapper {
+    width:60vw;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Image {
+    width:60vw;
+    height:auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.TextWrapper {
+    width:60vw;
+    height:auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    /* border-top: 3px solid #C0C0C0;
+    border-bottom: 3px solid #C0C0C0; */
+}
+
+
+.Text {
+    margin: 1.5rem;
+    font-size:1.2rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 1px 2px 3px darkgray;
+    font-family: 'New Tegomin', serif;
+}
+
+@media screen and (max-width:900px) {
+    .ContentsTitleWrapper{
+        font-size: 0.8rem;
+    }
+    .ContensWrapper{
+        flex-direction: column;
+    }
+    .ContentsTitle{
+        font-size: 1.4rem;
+    }
+    .ImgWrapper{
+        width: 95vw;
+        height: 40vh;
+    }
+    .Image{
+        width: 95vw;
+        height: 40vh;
+    }
+    .TextWrapper{
+        width: 95vw;
+    }
+    .Title{
+        font-size: 1.2rem;
+    }
+    .Text{
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+}

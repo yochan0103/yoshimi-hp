@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto+Slab&display=swap');
+
+.FooterWrapper {
+    width:100vw;
+    height: auto;
+    background-color: whitesmoke;
+    border-top: solid 1px black;
+    display: flex;
+    justify-content: center;
+}
+
+.TitleWrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.FooterTitle{
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}

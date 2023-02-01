@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto+Slab&display=swap');
+
+.HamburgerWrapper {
+    display: flex;
+    position: fixed;
+    /* top:-2px; */
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    padding: 0;
+    z-index: 2;
+    font-family: 'Roboto Slab', serif;
+}
+
+.NavLocation {
+    /* width: 100vw;
+    height: auto; */
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 0.5rem; */
+}
+
+.title{
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-right: 1rem;
+    letter-spacing: 0.1rem;
+    text-shadow: 2px 2px 0 snow;
+}
+
+.HamburgerNav {
+    display: flex;
+    justify-content: center;
+}
+
+.MenuWrapper {
+    list-style-type: none;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+    align-items: center;
+    /* position: absolute;
+    left:0;
+    top:2rem; */
+    z-index: 2;
+}
+
+.ListItem {
+    position: relative;
+    margin: 2rem;
+    font-size: 1rem;
+    border-bottom: solid 2px lightblue;
+    padding-bottom: 5px;
+    letter-spacing: 5px;
+}
+
+
+@media screen and (min-width:900px) { 
+    .HamburgerWrapper{
+        display: none;
+    }
+}

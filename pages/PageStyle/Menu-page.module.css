@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300&family=Passions+Conflict&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto+Slab&display=swap');
+
+.ImageWrapper{
+    width:100vw;
+    height: auto;
+}
+
+.HeroImage{
+    width: 100vw;
+    height:50vh;
+    object-fit: cover;
+}
+
+.HeroTextWrapper{
+    position:absolute;
+    top:5rem;
+    left: 10rem;
+}
+
+.HeroText{
+    font-size: 3rem;
+    color:white;
+    text-shadow: brown 3px 0 20px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 0.2rem;
+}
+
+.HeroSubText{
+    font-size: 1.5rem;
+    color:white;
+    text-shadow: brown 2px 0 20px;
+    letter-spacing: 0.2rem;
+}
+
+.TitleWrapper{
+    text-align: center;
+}
+
+.BodyTitle{
+    font-size:1.5rem;
+    letter-spacing: 0.5rem;
+    font-family: 'IBM Plex Sans JP', sans-serif;
+    display: inline-block;
+    border-bottom: 2px solid #0000FF;
+    padding-bottom: 1.2rem;
+}
+
+.FaceTitle{
+    font-size:1.5rem;
+    letter-spacing: 0.5rem;
+    font-family: 'IBM Plex Sans JP', sans-serif;
+    display: inline-block;
+    border-bottom: 2px solid #FFC0CB;
+    padding-bottom: 1.2rem;
+}
+
+
+.MenuSubTitle{
+    font-size: 1.2rem;
+    font-family: 'New Tegomin', serif;
+    letter-spacing: 0.3rem;
+}
+
+.MenuText{
+    font-family: 'IBM Plex Sans JP', sans-serif;
+    font-size: 1.2rem;
+}
+
+.RelaxMenuWrapper{
+    width:100vw;
+    height: auto;
+    display:flex;
+    justify-content: center;
+}
+
+.BodyMenuWrapper{
+    margin: 0 2rem;
+}
+
+.FacialMenuWrapper{
+    margin: 0 2rem;
+}
+
+.YogaImageWrapper{
+    width:100vw;
+    height: 50vh;
+    margin-top: 5rem;
+}
+.YogaHeroImage{
+    width: 100vw;
+    height:50vh;
+    object-fit: cover;
+}
+
+.YogaTextWrapper{
+    position:relative;
+    top:-15rem;
+    left: 10rem;
+    width: 40vw;
+    height: auto;
+}
+
+.YogaText{
+    font-size: 3rem;
+    color:white;
+    text-shadow: brown 3px 0 20px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 0.2rem;
+    width: 40vw;
+    height: auto;
+}
+
+.YogaSubText{
+    font-size: 1.5rem;
+    color:white;
+    text-shadow: brown 2px 0 20px;
+    letter-spacing: 0.2rem;
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto Slab', serif;
+    width: 40vw;
+    height: auto;
+}
+
+.YogaMenuWrapper{
+    width: 100vw;
+    height: auto;
+}
+
+.YogaCardWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.YogaTitle{
+    font-size:1.5rem;
+    letter-spacing: 0.5rem;
+    font-family: 'IBM Plex Sans JP', sans-serif;
+    display: inline-block;
+    border-bottom: 2px solid #008000;
+    padding-bottom: 1.2rem;
+}
+
+.AttentionWrapper{
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.AttentionText{
+    font-family: 'IBM Plex Sans JP', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    color: tomato;
+}
+
+@media screen and (max-width:900px) {
+    .ImageWrapper{
+        height: 30vh;
+    }
+
+    .HeroImage{
+        height: 30vh;
+    }
+
+    .HeroTextWrapper{
+        width: 60vw;
+        height: auto;
+        position: relative;
+        top:-10rem;
+        left: 1rem;
+    }
+
+    .HeroText{
+        font-size: 1.5rem;
+    }
+
+    .HeroSubText{
+        font-size: 1.1rem;
+    }
+
+    .BodyTitle{
+        font-size: 1.2rem;
+    }
+    .FaceTitle{
+        font-size: 1.2rem;
+    }
+    .MenuSubTitle{
+        font-size: 0.9rem;
+    }
+    .MenuText{
+        font-size: 1rem;
+    }
+    .RelaxMenuWrapper{
+        flex-direction: column;
+    }
+    .YogaImageWrapper{
+        height: 30vh;
+    }
+    .YogaHeroImage{
+        height: 30vh;
+    }
+    .YogaTextWrapper{
+        width: 60vw;
+        height: auto;
+        position: relative;
+        top:-10rem;
+        left: 1rem;
+    }
+    .YogaText{
+        font-size: 1.5rem;
+    }
+    .YogaSubText{
+        font-size: 0.9rem;
+    }
+    .YogaTitle{
+        font-size: 1.2rem;
+    }
+    .AttentionText{
+        font-size: 1rem;
+    }
+}

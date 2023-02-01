@@ -1,0 +1,14 @@
+.ButtonWrapper {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 2rem;
+}
+
+@media screen and (max-width:900px) {
+    .ButtonWrapper {
+        margin: 0;
+        position: relative;
+        z-index: 0;
+    }
+}

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto+Slab&display=swap');
+
+.ContentsWrapper {
+    width: 100vw;
+    height: auto;
+}
+
+.SlideWrapper {
+    padding: 0;
+    position: relative;
+    top:-1rem;
+}
+.SlideItem {
+    display:flex;
+}
+
+.Image {
+    width:100vw;
+    height: 90vh;
+    object-fit: cover;
+}
+
+.TextWrapper {
+    position:absolute;
+    top:10rem;
+    right: 10rem;
+}
+
+.TitleText {
+    font-size: 5rem;
+    color:white;
+    text-shadow: brown 3px 0 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.ContentsText {
+    font-size: 2rem;
+    color:white;
+    text-shadow: brown 2px 0 20px;
+}
+
+@media screen and (max-width:900px) {
+    .ContentsWrapper {
+        width: 100vw;
+        height: auto;
+        position: relative;
+        top:1.5rem;
+        /* z-index: -1; */
+    }
+
+    .Image {
+        width: 100vw;
+        height: auto;
+    }
+
+    .TextWrapper{
+        position: absolute;
+        top:5rem;
+        right: 2rem;
+    }
+
+    .TitleText{
+        font-size: 1.5rem;
+    }
+
+    .ContentsText{
+        font-size: 1rem;
+    }
+}

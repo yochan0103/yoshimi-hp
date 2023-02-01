@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300&family=Passions+Conflict&display=swap');
+
+.PrevWrapper{
+    position: relative;
+    width: 90vw;
+    height: auto;
+    top:10vh;
+    left:2vw;
+}
+
+.PrevHome{
+    font-size:1rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto Slab', serif;
+    margin:2rem;
+}
+
+.PrevHome::after{
+    position: absolute;
+    bottom: -4px;
+    left: 2rem;
+    content: '';
+    width: 3.5rem;
+    height: 1px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+
+.PrevHome:hover::after {
+    transform: scale(1, 1);
+}
+
+.MiddleIcon{
+    font-size:1rem;
+}
+
+.PrevBlog{
+    font-size:1rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto Slab', serif;
+    margin:2rem;
+}
+
+.PrevBlog::after{
+    position: absolute;
+    bottom: -4px;
+    left: 10rem;
+    content: '';
+    width: 3rem;
+    height: 1px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+
+.PrevBlog:hover::after {
+    transform: scale(1, 1);
+}
+
+.ContentsWrapper{
+    width:100vw;
+    height: auto;
+    display: flex;
+}
+
+.BlogContentsTitle{
+    width: 30vw;
+    position: relative;
+    top:10vh;
+    left:5vw;
+}
+
+.Title{
+    display: inline-block;
+    letter-spacing: 0.8rem;
+    font-size: 2.5rem;
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto Slab', serif;
+    border-bottom: 2px solid #F6ADC6;
+    padding-bottom: 1.5rem;
+}
+
+.SubTitle{
+    font-size: 1rem;
+    font-family: 'IBM Plex Sans JP', sans-serif;
+}
+
+.BlogElementWrapper{
+    width:50vw;
+    height: auto;
+    padding: 0;
+    margin-top: 15vh;
+}
+
+.BlogContentsWrapper{
+    margin-bottom: 5rem;
+    list-style: none;
+}
+
+.BlogListWrapper{
+    display: flex;
+    width:50vw;
+    height: auto;
+    border-bottom: 0.5px solid black;
+}
+
+.ImageWrapper{
+    width: 300px;
+    height:200px;
+    object-fit: cover;
+}
+
+.BlogTextWraper{
+    padding-left: 3vw;
+}
+
+.BlogDate{
+    font-family: 'IBM Plex Sans JP', sans-serif;
+    /* padding-top:2rem; */
+    font-size: 1rem;
+
+}
+
+.BlogTitle{
+    list-style: none;
+    padding-top: 2rem;
+    font-family: 'IBM Plex Sans JP', sans-serif;
+    letter-spacing: 0.2rem;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width:900px) {
+    .BlogContentsTitle{
+        width:80vw;
+    }
+    .ContentsWrapper{
+        flex-direction: column;
+    }
+    .Title{
+        font-size: 1.4rem;
+        letter-spacing: 0.5rem;
+    }
+    .BlogSubTitle{
+        font-size:0.6rem;
+        letter-spacing: 0.2rem;
+    }
+    .BlogDate{
+        font-size:0.5rem;
+    }
+    .BlogElememts{
+        font-size: 0.8rem;
+        padding-bottom: 0.6rem;
+    }
+    .BlogListWrapper{
+        width: 90vw;
+    }
+    .ImageWrapper{
+        width: 25vw;
+        height: 10vh;
+    }
+    .BlogElementWrapper{
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .BlogContentsWrapper{
+        width: 90vw;
+        margin-bottom: 2rem;
+    }
+    .BlogTextWraper{
+        padding-left: 5vw;
+    }
+    .BlogTitle{
+        padding-top: 1rem;
+    }
+}

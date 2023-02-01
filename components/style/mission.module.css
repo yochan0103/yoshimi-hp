@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300&family=Passions+Conflict&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+.ContentsWrapper {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* margin-top:20rem; */
+    /* position: relative;
+    top: auto; */
+    /* position: relative; */
+    /* top:10rem; */
+    /* background-color: #eeeded; */
+    width: 100vw;
+    height: auto;
+    font-family: 'IBM Plex Sans JP', sans-serif;
+}
+
+.ImageWrapper {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* position: relative;
+    top:-10rem; */
+    width: 40vw;
+    height: 50vh;
+    /* z-index: -1; */
+}
+
+.DocumentWrapper {
+    display: flex;
+    /* justify-content: space-between; */
+    /* position: relative; */
+    width: 100vw;
+    height: auto;
+    /* margin-top: -28rem; */
+    /* top: -10rem; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -7rem;
+    margin-bottom: 20px;
+    background-color: #F2F2F2;
+}
+
+.MissionWrapper {
+    /* position: relative; */
+    /* left: 1rem; */
+    overflow-wrap: break-word;
+    height: auto;
+    background-color: #F2F2F2;
+    width: 40vw;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    z-index: 1;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+
+.title {
+    color: black;
+    margin:30px;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    font-family: 'Caveat', cursive;
+}
+
+.subtitle {
+    color: black;
+    margin: 30px;
+    font-size: 1.5rem;
+    letter-spacing: 1rem;
+}
+
+.SentenceWrapper{
+    margin-top: 10rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    overflow-wrap: break-word;
+}
+
+.contents {
+    color: black; 
+    width: 20vw;
+    height: auto;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.ToBlogWrapper {
+    display: flex;
+    /* position: relative; */
+    width: 5vw;
+    margin: 1rem;
+    height: auto;
+    /* left:-2rem; */
+}
+
+.ToBlogText {
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 0.1rem;
+}
+
+.ButtonIcon{
+    position: relative;
+    top:-5px;
+}
+
+.Image {
+    width: 40vw;
+    height:50vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:900px) {
+    .ContentsWrapper {
+        height:60vh;
+    }
+
+    .ImageWrapper{
+        display:flex;
+        justify-content: center;
+        width:100vw;
+        height: 20vh;
+    }
+    .MissionWrapper{
+        width: 60vw;
+        margin-top: 8rem;
+    }
+    .SentenceWrapper{
+        position: relative;
+        top:3rem;
+        /* width: 30vw; */
+    }
+    .contents{
+        width: 50vw;
+        font-size: 0.5rem;
+    }
+    .DocumentWrapper{
+        top:0;
+    }
+    .title{
+        margin-left: 5px;
+        margin-right: 30px;
+        font-size: 0.8rem;
+    }
+    .subtitle{
+        margin-right: 10px;
+        margin-left: 0;
+        font-size: 1rem;
+        letter-spacing: 5px;
+    }
+    .ToBlogText{
+        display: none;
+    }
+    .ButtonIcon{
+        display: none;
+    }
+    .Image {
+        width: 100vw;
+        height: 30vh;
+        border-radius: 0;
+    }
+}
