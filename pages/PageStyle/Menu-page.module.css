@@ -9,13 +9,13 @@
 
 .HeroImage{
     width: 100vw;
-    height:50vh;
+    height:70vh;
     object-fit: cover;
 }
 
 .HeroTextWrapper{
     position:absolute;
-    top:5rem;
+    top:10rem;
     left: 10rem;
 }
 
@@ -85,18 +85,18 @@
 
 .YogaImageWrapper{
     width:100vw;
-    height: 50vh;
+    height: 70vh;
     margin-top: 5rem;
 }
 .YogaHeroImage{
     width: 100vw;
-    height:50vh;
+    height:70vh;
     object-fit: cover;
 }
 
 .YogaTextWrapper{
     position:relative;
-    top:-15rem;
+    top:-20rem;
     left: 10rem;
     width: 60vw;
     height: auto;
@@ -118,7 +118,7 @@
     text-shadow: brown 2px 0 20px;
     letter-spacing: 0.2rem;
     font-family: 'IBM Plex Sans JP', sans-serif;
-    width: 40vw;
+    width: 80vw;
     height: auto;
 }
 
@@ -155,11 +155,11 @@
 
 @media screen and (max-width:900px) {
     .ImageWrapper{
-        height: 30vh;
+        height: 40vh;
     }
 
     .HeroImage{
-        height: 30vh;
+        height: 40vh;
     }
 
     .HeroTextWrapper{
@@ -200,7 +200,7 @@
         height: 30vh;
     }
     .YogaTextWrapper{
-        width: 60vw;
+        width: 80vw;
         height: auto;
         position: relative;
         top:-10rem;

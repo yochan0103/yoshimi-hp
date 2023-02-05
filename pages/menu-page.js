@@ -21,7 +21,7 @@ const Menu = ({ menu }) => {
             <Header />
             <HamburgerMenu />
             <div className={styles.ImageWrapper}>
-                <img src="/IMG_04.jpg" alt='' className={styles.HeroImage} />
+                <img src="/MassageImage.jpg" alt='' className={styles.HeroImage} />
                 <div className={styles.HeroTextWrapper}>
                     <h1 className={styles.HeroText}>マッサージメニュー</h1>
                     <p className={styles.HeroSubText}>日々の疲れ癒します</p>
@@ -30,11 +30,11 @@ const Menu = ({ menu }) => {
             <div className={styles.RelaxMenuWrapper}>
                 <div className={styles.BodyMenuWrapper}>
                     <div className={styles.TitleWrapper}>
-                        <h1 className={styles.BodyTitle}>筋膜リリース</h1>
+                        <h1 className={styles.BodyTitle}>ボディケア</h1>
                     </div>
                     <Card elevation={10} sx={{ maxWidth: 500, 
                         "@media screen and (max-width:900px)":{
-                            maxWidth: 400
+                            maxWidth: 300
                         }}}>
                         <CardContent>
                             <h2 className={styles.MenuSubTitle}>
@@ -55,7 +55,7 @@ const Menu = ({ menu }) => {
                     </div>
                     <Card elevation={10} sx={{ maxWidth: 500, 
                         "@media screen and (max-width:900px)":{
-                            maxWidth: 400
+                            maxWidth: 300
                         }}}>
                         <CardContent>
                             <h2 className={styles.MenuSubTitle}>
@@ -72,7 +72,7 @@ const Menu = ({ menu }) => {
                 </div>
             </div>
             <div className={styles.YogaImageWrapper}>
-                <img src="/IMG_10.jpg" alt='' className={styles.YogaHeroImage} />
+                <img src="/YogaImage.jpg" alt='' className={styles.YogaHeroImage} />
                 <div className={styles.YogaTextWrapper}>
                     <h1 className={styles.YogaText}>ヨガメニュー</h1>
                     <p className={styles.YogaSubText}>体を動かしてリフレッシュ！！</p>
@@ -85,7 +85,7 @@ const Menu = ({ menu }) => {
                 <div className={styles.YogaCardWrapper}>
                     <Card elevation={10} sx={{ maxWidth: 500, 
                         "@media screen and (max-width:900px)":{
-                            maxWidth: 400
+                            maxWidth: 300
                         }}}>
                             <CardContent>
                                 <h2 className={styles.MenuSubTitle}>
