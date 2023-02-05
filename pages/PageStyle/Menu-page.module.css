@@ -177,9 +177,16 @@
     .HeroSubText{
         font-size: 1.1rem;
     }
-
+    .BodyCardWrapper{
+        display: flex;
+        justify-content: center;
+    }
     .BodyTitle{
         font-size: 1.2rem;
+    }
+    .FaceCardWrapper{
+        display: flex;
+        justify-content: center;
     }
     .FaceTitle{
         font-size: 1.2rem;
