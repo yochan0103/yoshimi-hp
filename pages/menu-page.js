@@ -32,43 +32,47 @@ const Menu = ({ menu }) => {
                     <div className={styles.TitleWrapper}>
                         <h1 className={styles.BodyTitle}>ボディケア</h1>
                     </div>
-                    <Card elevation={10} sx={{ maxWidth: 500, 
-                        "@media screen and (max-width:900px)":{
-                            maxWidth: 300
-                        }}}>
-                        <CardContent>
-                            <h2 className={styles.MenuSubTitle}>
-                                {menu[2].summary}
-                            </h2>
-                            <div className={styles.MenuText}
-                            dangerouslySetInnerHTML={{
-                                __html: `${menu[2].MenuList}`,
-                            }}
-                            >
-                            </div>
-                        </CardContent>
-                    </Card>
+                    <div className={styles.BodyCardWrapper}>
+                        <Card elevation={10} sx={{ maxWidth: 500, 
+                            "@media screen and (max-width:900px)":{
+                                maxWidth: 300
+                            }}}>
+                            <CardContent>
+                                <h2 className={styles.MenuSubTitle}>
+                                    {menu[2].summary}
+                                </h2>
+                                <div className={styles.MenuText}
+                                dangerouslySetInnerHTML={{
+                                    __html: `${menu[2].MenuList}`,
+                                }}
+                                >
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </div>
                 </div>
                 <div className={styles.FacialMenuWrapper}>
                     <div className={styles.TitleWrapper}>
                         <h1 className={styles.FaceTitle}>フェイシャルケア</h1>
                     </div>
-                    <Card elevation={10} sx={{ maxWidth: 500, 
-                        "@media screen and (max-width:900px)":{
-                            maxWidth: 300
-                        }}}>
-                        <CardContent>
-                            <h2 className={styles.MenuSubTitle}>
-                                {menu[1].summary}
-                            </h2>
-                            <div className={styles.MenuText}
-                            dangerouslySetInnerHTML={{
-                                __html: `${menu[1].MenuList}`,
-                            }}
-                            >
-                            </div>
-                        </CardContent>
-                    </Card>
+                    <div className={styles.FaceCardWrapper}>
+                        <Card elevation={10} sx={{ maxWidth: 500, 
+                            "@media screen and (max-width:900px)":{
+                                maxWidth: 300
+                            }}}>
+                            <CardContent>
+                                <h2 className={styles.MenuSubTitle}>
+                                    {menu[1].summary}
+                                </h2>
+                                <div className={styles.MenuText}
+                                dangerouslySetInnerHTML={{
+                                    __html: `${menu[1].MenuList}`,
+                                }}
+                                >
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </div>
                 </div>
             </div>
             <div className={styles.YogaImageWrapper}>
