@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300&family=Passions+Conflict&display=swap');
+
+.PrevWrapper{
+    position: relative;
+    width: 90vw;
+    height: auto;
+    top:10vh;
+    left:2vw;
+    display: flex;
+}
+
+.PrevHome{
+    font-size:1rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto Slab', serif;
+    margin-left:2rem;
+}
+
+.PrevHome::after{
+    position: absolute;
+    bottom: -4px;
+    left: 2rem;
+    content: '';
+    width: 3.5rem;
+    height: 1px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+
+.PrevHome:hover::after {
+    transform: scale(1, 1);
+}
+
+.MiddleIcon{
+    font-size:1rem;
+    margin-left:2rem;
+}
+
+.PrevMenu{
+    font-size:1rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto Slab', serif;
+    margin-left:2rem;
+}
+
+.PrevMenu::after{
+    position: absolute;
+    bottom: -4px;
+    left: 10rem;
+    content: '';
+    width: 3.5rem;
+    height: 1px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+
+.PrevMenu:hover::after {
+    transform: scale(1, 1);
+}
+
+.ContentsWrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.OptionTextWrapper{
+    /* width: 30vw; */
+    height: auto;
+    position: relative;
+    top:-15vh;
+    left:1vw;
+    margin: 0;
+}
+
+.OptionText{
+    display: inline-block;
+    letter-spacing: 0.8rem;
+    font-size: 2rem;
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto Slab', serif;
+    border-bottom: 2px solid #F6ADC6;
+    padding-bottom: 1.5rem;
+}
+
+.OptionMenuWrapper{
+    width: 70vw;
+    height: auto;
+    list-style: none;
+    padding: 0;
+    margin-top: 20vh;
+}
+
+.OptionElement{
+    margin: 2rem;
+}
+
+.OptionElementWrapper{
+    display: flex;
+    margin: 1rem;
+}
+
+.OptionTextWrapper{
+    margin: auto;
+}
+
+@media screen and (max-width:900px) {
+    .ContentsWrapper{
+        flex-direction: column;
+    }
+    .OptionTextWrapper{
+        top:15vh;
+    }
+    .OptionText{
+        font-size: 1.4rem;
+    }
+
+    .OptionMenuWrapper{
+        width: 95vw;
+        margin: 5rem auto;
+    }
+}
