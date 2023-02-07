@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300&family=Passions+Conflict&display=swap');
+
+.OptionElementWrapper{
+    display: flex;
+    margin: 1rem;
+}
+
+.ImageElement{
+    width: 300px;
+    height:200px;
+    object-fit: cover;
+}
+
+.OptionTextWrapper{
+    margin: auto;
+}
+
+.OptionName{
+    font-family: 'IBM Plex Sans JP', sans-serif;
+    letter-spacing: 0.1rem;
+    font-size:1.8rem;
+}
+
+.OptionFee{
+    letter-spacing: 0.1rem;
+    font-family: 'Roboto Slab', serif;
+    font-size:1.5rem;
+}
+
+@media screen and (max-width:900px) {
+    .OptionElementWrapper{
+        flex-direction: column;
+    }
+    .ImageElement{
+        width: 250px;
+        height: 200px;
+        margin: auto;
+    }
+    .OptionName{
+        font-size: 1.5rem;
+    }
+    .OptionFee{
+        font-size: 1.2rem;
+    }
+    .OptionTextWrapper{
+        margin: 1rem 0;
+    }
+}
