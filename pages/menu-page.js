@@ -41,7 +41,7 @@ const Menu = ({ menu }) => {
                             }}}>
                             <CardContent>
                                 <h2 className={styles.MenuSubTitle}>
-                                    {menu[3].summary}
+                                    {menu[2].summary}
                                 </h2>
                                 <div className={styles.MenuText}
                                 dangerouslySetInnerHTML={{
@@ -64,7 +64,7 @@ const Menu = ({ menu }) => {
                             }}}>
                             <CardContent>
                                 <h2 className={styles.MenuSubTitle}>
-                                    {menu[2].summary}
+                                    {menu[1].summary}
                                 </h2>
                                 <div className={styles.MenuText}
                                 dangerouslySetInnerHTML={{
@@ -95,7 +95,7 @@ const Menu = ({ menu }) => {
                         }}}>
                             <CardContent>
                                 <h2 className={styles.MenuSubTitle}>
-                                    {menu[1].summary}
+                                    {menu[0].summary}
                                 </h2>
                                 <div className={styles.MenuText}
                                 dangerouslySetInnerHTML={{
