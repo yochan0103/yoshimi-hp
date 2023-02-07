@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300&family=Passions+Conflict&display=swap');
+
+.PrevWrapper{
+    position: relative;
+    width: 90vw;
+    height: auto;
+    top:5vh;
+    left:5vw;
+    display: flex;
+}
+
+.PrevHome{
+    font-size:1rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto Slab', serif;
+    margin-left:2rem;
+}
+
+.PrevHome::after{
+    position: absolute;
+    bottom: -4px;
+    left: 2rem;
+    content: '';
+    width: 3.5rem;
+    height: 1px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+
+.PrevHome:hover::after {
+    transform: scale(1, 1);
+}
+
+.MiddleIcon{
+    font-size:1rem;
+    margin-left:2rem;
+}
+
+.PrevMenu{
+    font-size:1rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto Slab', serif;
+    margin-left:2rem;
+}
+
+.PrevMenu::after{
+    position: absolute;
+    bottom: -4px;
+    left: 10rem;
+    content: '';
+    width: 3.5rem;
+    height: 1px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+
+.PrevMenu:hover::after {
+    transform: scale(1, 1);
+}
+
+.OptionName{
+    font-size:1rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto Slab', serif;
+    margin-left:2rem;
+}
+
+.OptionName::after{
+    position: absolute;
+    bottom: -4px;
+    left: 18.5rem;
+    content: '';
+    width: 5.5rem;
+    height: 1px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+
+.OptionName:hover::after {
+    transform: scale(1, 1);
+}
+
+.ResponsePrevWrapper{
+    display: flex;
+    height: auto;
+    width:40vw;
+    position: relative;
+    top:10vh;
+    left: 2rem;
+}
+
+.ResponsePrevText{
+    position: relative;
+    width: 50vw;
+    bottom:2.8rem;
+    left:2.5rem;
+}
+
+.ContentsWrapper{
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top:10vh;
+    margin-bottom: 20vh;
+}
+
+.ImageWrapper{
+    width: 80vw;
+    height: 50vh;
+    margin: 0 auto;
+}
+
+.ImageElement{
+    width: 80vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.TitleWrapper{
+    position:relative;
+    top:-10rem;
+    left: 10rem;
+    width: 60vw;
+    height: auto;
+}
+
+.Title{
+    font-size: 3rem;
+    color:white;
+    text-shadow: brown 3px 0 20px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 0.2rem;
+    width: 60vw;
+    height: auto;
+}
+
+.TextWrapper{
+    width: 80vw;
+    height: auto;
+    margin: 1rem auto;
+}
+
+.Sentence{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 3rem;
+    text-shadow: 1px 1px 2px green;
+}
+
+@media screen and (max-width:900px) {
+    .PrevWrapper{
+        display: none;
+    }
+
+    .ResponsePrevWrapper{
+        height: auto;
+        width:50vw;
+        position: relative;
+        top:10vh;
+        left: 20px;
+    }
+
+    .ContentsWrapper{
+        top:5vh;
+    }
+
+    .ImageWrapper{
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .ImageElement{
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .TitleWrapper{
+        width: 60vw;
+        height: auto;
+        position: relative;
+        top:-8rem;
+        left: 1rem;
+    }
+
+    .Title{
+        font-size: 1.5rem;
+    }
+
+    .Sentence{
+        font-size: 1rem;
+        line-height:2rem;
+    }
+}

@@ -5,6 +5,8 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Footer from '../components/footer';
 import HamburgerMenu from '../components/HamburgerMenu';
+import Link from 'next/link';
+import { Button } from '@mui/material';
 
 export const getStaticProps = async () => {
     const data = await client.get({ endpoint: "menu" });
@@ -39,7 +41,7 @@ const Menu = ({ menu }) => {
                             }}}>
                             <CardContent>
                                 <h2 className={styles.MenuSubTitle}>
-                                    {menu[2].summary}
+                                    {menu[3].summary}
                                 </h2>
                                 <div className={styles.MenuText}
                                 dangerouslySetInnerHTML={{
@@ -62,7 +64,7 @@ const Menu = ({ menu }) => {
                             }}}>
                             <CardContent>
                                 <h2 className={styles.MenuSubTitle}>
-                                    {menu[1].summary}
+                                    {menu[2].summary}
                                 </h2>
                                 <div className={styles.MenuText}
                                 dangerouslySetInnerHTML={{
@@ -93,7 +95,7 @@ const Menu = ({ menu }) => {
                         }}}>
                             <CardContent>
                                 <h2 className={styles.MenuSubTitle}>
-                                    {menu[0].summary}
+                                    {menu[1].summary}
                                 </h2>
                                 <div className={styles.MenuText}
                                 dangerouslySetInnerHTML={{
@@ -104,6 +106,13 @@ const Menu = ({ menu }) => {
                             </CardContent>
                     </Card>
                 </div>
+            </div>
+            <div className={styles.OptionWrapper}>
+                <Link href="/option-page">
+                    <Button variant="outlined" color="success">
+                        オプションメニューはこちら！
+                    </Button>
+                </Link>
             </div>
             <div className={styles.AttentionWrapper}>
                 <h2 className={styles.AttentionText}>※男性の施術はご面識のある方、あるいはご紹介のある方のみ受付させていただきます。</h2>
