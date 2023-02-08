@@ -25,7 +25,7 @@ const Menu = ({ menu }) => {
             <div className={styles.ImageWrapper}>
                 <img src="/MassageImage.jpg" alt='' className={styles.HeroImage} />
                 <div className={styles.HeroTextWrapper}>
-                    <h1 className={styles.HeroText}>マッサージメニュー</h1>
+                    <h1 className={styles.HeroText}>ボディメンテナンス</h1>
                     <p className={styles.HeroSubText}>日々の疲れ癒します</p>
                 </div>
             </div>
