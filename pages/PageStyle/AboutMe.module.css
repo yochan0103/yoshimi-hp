@@ -13,48 +13,64 @@
     padding-bottom: 10px;
     font-family: 'Roboto Slab', serif;
     font-size: 2rem;
+    letter-spacing: 0.2rem;
 }
 
 .ContensWrapper{
-    width:100vw;
+    width:90vw;
     height:auto;
-    /* display: flex; */
-    /* justify-content: center; */
+    display: flex; 
+    justify-content: center;
+    margin: auto;
 }
 
 .ImgWrapper {
-    width:60vw;
+    width:30vw;
     height:auto;
     margin-left: auto;
     margin-right: auto;
 }
 
 .Image {
-    width:60vw;
-    height:auto;
+    width:30vw;
+    height:60vh;
     border-radius: 20px;
     object-fit: cover;
 }
 
 .TextWrapper {
-    width:60vw;
+    width:50vw;
     height:auto;
     border-radius: 10px;
     margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     background-color: white;
     /* border-top: 3px solid #C0C0C0;
     border-bottom: 3px solid #C0C0C0; */
 }
 
+.Title{
+    font-size: 1.5rem;
+    font-family: 'IBM Plex Sans JP', sans-serif;
+    letter-spacing: 0.1rem;
+    margin: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.Consept{
+    font-size: 2rem;
+    color: #00406C;
+    margin: 0 2rem 2rem;
+}
 
 .Text {
-    margin: 1.5rem;
+    /* margin: 1.5rem; */
     font-size:1.2rem;
     letter-spacing: 0.2rem;
     text-shadow: 1px 2px 3px darkgray;
-    font-family: 'New Tegomin', serif;
+    font-family: 'IBM Plex Sans JP', sans-serif;
+    line-height: 200%;
+    margin: 2rem;
 }
 
 @media screen and (max-width:900px) {
@@ -72,14 +88,19 @@
         height: 40vh;
     }
     .Image{
-        width: 95vw;
+        width: 90vw;
         height: 40vh;
     }
     .TextWrapper{
-        width: 95vw;
+        width: 90vw;
     }
     .Title{
         font-size: 1.2rem;
+        margin-top: 2rem;
+        color: #5298D6;
+    }
+    .Consept{
+        font-size: 1.8rem;
     }
     .Text{
         font-size: 1rem;
