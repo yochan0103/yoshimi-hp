@@ -11,7 +11,7 @@ const AboutMe = () => {
             <img src="/IMG_06.jpg" alt="" className={styles.Image} />
           </div>
           <div className={styles.TextWrapper}>
-              <h2 className={styles.Title}>セラピスト よしみ</h2>
+              <h2 className={styles.Title}>yoshimi</h2>
               <h1 className={styles.Consept}>私を導くのは私自身<br />健やかに自由で美しく</h1>
               <p className={styles.Text}>
               多忙な日々の中でストレスを抱え体調を崩し生きづらさを感じていました。
