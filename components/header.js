@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className={styles.HeaderWrapper}>
             <nav className={styles.Nav}>
-                <div>ロゴ画像</div>
+                <div></div>
                 <ul className={styles.MenuWrapper}>
                     <li className={styles.ListItem}>
                         <Link href='/'> 
