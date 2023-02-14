@@ -25,9 +25,19 @@
 .title{
     margin-top: auto;
     margin-bottom:auto;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
     letter-spacing: 0.1rem;
     text-shadow: 2px 2px 0 snow;
+}
+
+.LogoImage{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 999px;
+    position: relative;
+    top:2px;
+    right:2px;
 }
 
 .HamburgerNav {
@@ -58,7 +68,7 @@
     border-radius: 999px;
     position: relative;
     top:2px;
-    right: -12px;
+    right: 2px;
 }
 
 .ListItem {
