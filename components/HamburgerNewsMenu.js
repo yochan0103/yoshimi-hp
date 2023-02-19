@@ -28,7 +28,7 @@ const HamburgerNewsMenu = () => {
             }
             <div className={styles.title}>
                 <Link href='/'>
-                    yuj
+                    <img src="/yuj-logos-1.png" alt='yuj salon' className={styles.LogoImage} />
                 </Link>
             </div>
         </div>
