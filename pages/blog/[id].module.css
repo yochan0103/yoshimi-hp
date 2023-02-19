@@ -114,6 +114,10 @@
     left:10px;
 }
 
+.ContentsResponsiveWrapper{
+    display: none;
+}
+
 @media screen and (max-width:900px) {
     .PrevWrapper{
         display: none;
@@ -133,17 +137,35 @@
         bottom:8px;
         left:10px;
     }
+    .ResponsePublishedTime{
+        font-size: 0.8rem;
+        color: black;
+    }
+
+    .ResponseTitle{
+        font-size: 1.5rem;
+        color:black;
+    }
+
     .ContentsWrapper{
+        display: none;
+    }
+
+    .ContentsResponsiveWrapper{
+        display: flex;
+        flex-direction: column;
         width:80vw;
         top:5rem;
+        height:auto;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
     }
-    .PublishedTime{
-        font-size: 0.8rem;
-    }
-    .Title{
-        font-size: 1.5rem;
-    }
-    .Contents{
+
+    .ResponseContents{
         font-size: 1rem;
+        letter-spacing: 0.1rem;
+        color:black;
+        font-family: 'IBM Plex Sans JP', sans-serif;
     }
 }

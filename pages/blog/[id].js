@@ -44,6 +44,17 @@ const BlogId = ({ blogs }) => {
             }}
           />
       </div>
+      <div className={styles.ContentsResponsiveWrapper}>
+          <div className={styles.ResponsePublishedTime}>
+            <ConvertTime convertDate={blogs.publishedAt} />
+          </div>
+          <h1 className={styles.ResponseTitle} >{blogs.title}</h1>
+          <div className={styles.ResponseContents}
+            dangerouslySetInnerHTML={{
+              __html: `${blogs.responsive}`,
+            }}
+          />
+      </div>
     </>
   );
 }
